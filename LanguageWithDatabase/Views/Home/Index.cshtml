@@ -1,0 +1,33 @@
+﻿<h3>目前語系:</h3>
+@ViewData["_Language"]
+
+<h3>顯示語系值</h3>
+@Resources.Language.星期一
+<br />
+@Resources.Language.星期二
+<br />
+@Resources.Language.星期三
+<br />
+@Resources.Language.星期四
+<br />
+@Resources.Language.星期五
+<br />
+@Resources.Language.星期六
+<br />
+@Resources.Language.星期日
+
+<h3>切換語系</h3>
+<a href="@Url.Action("ChangeLang", "Home", new { langName = "zh-TW" })">中文</a> | <a href="@Url.Action("ChangeLang", "Home", new { langName = "en-US" })">英文</a>
+
+<h3>資料庫欄位轉換語系值</h3>
+@Html.Raw(ViewData["ConvertColumnLang"])
+
+<h3>JavaScript 顯示語系</h3>
+<script type="text/jscript">
+    //多語系物件
+    @(Html.Raw(ViewData["_JsLangObj"]));
+</script>
+
+<script src="~/Scripts/MyScript.js"></script>
+
+<button onclick="showJsLangObj();">取得 JavaScript 語系值</button>

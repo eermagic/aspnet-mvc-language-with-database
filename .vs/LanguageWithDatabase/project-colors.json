@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "ede1e9e5-f742-4c3e-87b6-09f091acf587": {
+      "ProjectGuid": "ede1e9e5-f742-4c3e-87b6-09f091acf587",
+      "DisplayName": "LanguageWithDatabase",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
